@@ -1,0 +1,6 @@
+/target
+
+# jsons
+*.json
+!words.json
+.env

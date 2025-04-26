@@ -1,0 +1,29 @@
+[package]
+name = "steampolice"
+version = "0.1.0"
+edition = "2021"
+authors = ["dest4590", "Gemini 2.0 Flash Thinking Experimental"]
+default-run = "steampolice"
+
+[[bin]]
+edition = "2021"
+name = "cookie"
+path = "generated/cookie.rs"
+
+[dependencies]
+reqwest = { version = "0.12.12", features = ["json", "cookies"] }
+anyhow = "1.0.95"
+clap = { version = "4.5.23", features = ["derive"] }
+colored = "2.2.0"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+futures = "0.3.31"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+scraper = "0.22.0"
+tokio = { version = "1.42.0", features = ["full"] }
+log = "0.4.22"
+simple_logger = "5.0.0"
+indicatif = "0.17.9"
+regex = "1.11.1"
+rand = "0.8.5"
